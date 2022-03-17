@@ -21,24 +21,37 @@ body {
   font-size: 14px;
 }
 
-.dif-type {
-  background-color: aqua;
-  height: 70px;
+.font-s-11 {
+  font-size: 11px;
 }
 
-.text-play5 {
-  background-color: chartreuse;
-  height: 70px;
+.font-s-20 {
+  font-size: 20px;
+}
+.jumbo-item img {
+  border-radius: 15px;
 }
 
-.console {
-  background-color: darkcyan;
-  height: 200px;
+.my-active {
+  border: 2px solid white;
+  box-shadow: 0 0 0 0px white, 0 0 0 1.5px #0072ce;
 }
 
-.console-imgs {
-  background-color: burlywood;
-  height: 70px;
+.jumbo_bottom {
+  height: 120px;
+}
+
+.my-text-gray {
+  color: gray;
+}
+
+.my-text-blue {
+  color: #0072ce;
+}
+
+.plays5 {
+  background-color: white;
+  height: 600px;
 }
 
 .avventura {
