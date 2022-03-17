@@ -32,9 +32,14 @@ body {
   border-radius: 15px;
 }
 
-.my-active {
+.jombo-bottom .my-active {
   border: 2px solid white;
   box-shadow: 0 0 0 0px white, 0 0 0 1.5px #0072ce;
+}
+
+.plays5 .container-xl .row .my-active {
+  border-bottom: 2px solid #0072ce;
+  cursor: pointer;
 }
 
 .jumbo_bottom {
@@ -51,7 +56,6 @@ body {
 
 .plays5 {
   background-color: white;
-  height: 600px;
 }
 
 .avventura {
