@@ -100,11 +100,9 @@ body {
   cursor: pointer;
 }
 
-.plays4 {
-  height: 500px;
-}
 .playsplus {
   background-color: var(--light-gray);
+  height: 330px;
 }
 
 .playsnow {
@@ -148,8 +146,8 @@ footer .container .row .col-6 a {
   content: "\f106";
 }
 
-@media (min-width: 768px) {
-  .playsplus .container .row .right {
-    display: block;
+@media (max-width: 768px) {
+  .right {
+    visibility: hidden;
   }
 }
