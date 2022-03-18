@@ -58,7 +58,7 @@ body {
 }
 
 .my-text-gray {
-  color: gray;
+  color: #777777;
 }
 
 .my-text-blue {
@@ -86,6 +86,12 @@ body {
   color: var(--btn-text);
   font-weight: bold;
 }
+
+.btn_white {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
 .nuove-uscite {
   background-color: var(--light-black);
 }
@@ -106,21 +112,32 @@ body {
   height: 300px;
 }
 
-.sconti {
-  background-color: hotpink;
-  height: 500px;
-}
-
 .playsnow {
-  background-color: darkmagenta;
-  height: 300px;
-}
-
-.media {
-  background-color: lightgreen;
+  background-color: var(--dark-blu);
+  background-image: url("img/ps-now-april-featured-image-block.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 350px;
 }
 
 #site_footer {
   background-color: var(--bg-footer);
   height: 400px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.col-2 ul {
+  line-height: 22px;
+}
+
+ul {
+  list-style: none;
+}
+
+footer .container .row .col-6 a {
+  text-decoration: underline;
 }
