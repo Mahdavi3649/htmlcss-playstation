@@ -4,6 +4,8 @@
   --light-black: #1f1f1f;
   --light-gray: #bebcbb;
   --btn_red: #cd3d0f;
+  --btn-text: #507ce4;
+  --btn-light-gray: #d9dadc;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -79,9 +81,13 @@ body {
   color: white;
 }
 
+.btn_gray {
+  background-color: var(--btn-light-gray);
+  color: var(--btn-text);
+  font-weight: bold;
+}
 .nuove-uscite {
   background-color: var(--light-black);
-  height: 650px;
 }
 
 .my_cursor_pointer {
@@ -89,11 +95,14 @@ body {
 }
 
 .plays4 {
-  background-color: greenyellow;
   height: 500px;
 }
 .playsplus {
-  background-color: goldenrod;
+  background-color: var(--light-gray);
+  background-image: url("img/ps-plus-april-monthly-games-featured-image-block.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 300px;
 }
 
