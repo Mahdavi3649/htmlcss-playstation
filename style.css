@@ -26,10 +26,18 @@ body {
   font-size: 12px;
 }
 
+.font-s-13 {
+  font-size: 13px;
+}
+
 .font-s-20 {
   font-size: 20px;
 }
 .jumbo-item img {
+  border-radius: 15px;
+}
+
+.nuove-uscite img {
   border-radius: 15px;
 }
 
@@ -73,7 +81,11 @@ body {
 
 .nuove-uscite {
   background-color: var(--light-black);
-  height: 500px;
+  height: 650px;
+}
+
+.my_cursor_pointer {
+  cursor: pointer;
 }
 
 .plays4 {
