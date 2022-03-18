@@ -105,19 +105,10 @@ body {
 }
 .playsplus {
   background-color: var(--light-gray);
-  background-image: url("img/ps-plus-april-monthly-games-featured-image-block.png");
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 300px;
 }
 
 .playsnow {
   background-color: var(--dark-blu);
-  background-image: url("img/ps-now-april-featured-image-block.png");
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
   height: 350px;
 }
 
@@ -140,4 +131,25 @@ ul {
 
 footer .container .row .col-6 a {
   text-decoration: underline;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-toggle::after {
+  border: none;
+  font: var(--fa-font-solid);
+  content: "\f107";
+}
+
+.dropdown-toggle.show::after {
+  content: "\f106";
+}
+
+@media (min-width: 768px) {
+  .playsplus .container .row .right {
+    display: block;
+  }
 }
