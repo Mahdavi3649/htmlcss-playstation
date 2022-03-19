@@ -35,22 +35,32 @@ body {
 .font-s-20 {
   font-size: 20px;
 }
+
 .jumbo-item img {
-  border-radius: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.jumbo-item img:hover {
+  transition: 0.5s;
+  transform: translate(0, -15%);
+  border: 2px solid white;
+  box-shadow: 0 0 0 0px white, 0 0 0 3px #0072ce;
 }
 
 .nuove-uscite img {
   border-radius: 15px;
 }
 
-.jombo-bottom .my-active {
-  border: 2px solid white;
-  box-shadow: 0 0 0 0px white, 0 0 0 1.5px #0072ce;
+.plays5 .my-active {
+  opacity: 75%;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-.plays5 .container-xl .row .my-active {
+.plays5 .my-active:hover {
   border-bottom: 2px solid #0072ce;
-  cursor: pointer;
+  opacity: 100%;
 }
 
 .my-text-gray {
@@ -61,33 +71,45 @@ body {
   color: #0072ce;
 }
 
-.plays5 {
-  background-color: white;
-}
-
 .avventura {
   background-image: url("img/it-takes-two-hero-banner-desktop.jpg");
   background-position: center;
   background-size: cover;
-  height: 500px;
 }
 
+.btn-primary:hover {
+  outline: 2px solid rgb(56, 56, 236);
+  outline-offset: +2px;
+}
+.btn_red:hover {
+  outline: 2px solid black;
+  outline-offset: -4px;
+}
 .btn_red {
   background-color: var(--btn_red);
-  color: white;
+  color: white !important;
 }
 
+.btn_gray:hover {
+  outline: 2px solid gainsboro;
+  outline-offset: +1px;
+}
 .btn_gray {
   background-color: var(--btn-light-gray);
-  color: var(--btn-text);
+  color: var(--btn-text) !important;
   font-weight: bold;
 }
 
+.btn_white:hover {
+  outline: 2px solid black;
+  outline-offset: -4px;
+}
 .btn_white {
   background-color: white;
   color: black;
   font-weight: bold;
 }
+
 .nuove-uscite {
   background-color: var(--light-black);
 }
@@ -102,7 +124,6 @@ body {
 
 .playsnow {
   background-color: var(--dark-blu);
-  height: 350px;
 }
 
 #site_footer {
@@ -114,7 +135,7 @@ a {
 }
 
 footer .container .row .col.top {
-  line-height: 22px;
+  line-height: 20px;
 }
 
 ul {
