@@ -53,10 +53,6 @@ body {
   cursor: pointer;
 }
 
-.jumbo_bottom {
-  height: 120px;
-}
-
 .my-text-gray {
   color: #777777;
 }
@@ -102,7 +98,6 @@ body {
 
 .playsplus {
   background-color: var(--light-gray);
-  height: 330px;
 }
 
 .playsnow {
@@ -112,14 +107,13 @@ body {
 
 #site_footer {
   background-color: var(--bg-footer);
-  height: 400px;
 }
 
 a {
   text-decoration: none;
 }
 
-.col-2 ul {
+footer .container .row .col.top {
   line-height: 22px;
 }
 
@@ -127,7 +121,7 @@ ul {
   list-style: none;
 }
 
-footer .container .row .col-6 a {
+footer .container .row .col.bottom a {
   text-decoration: underline;
 }
 
@@ -148,6 +142,6 @@ footer .container .row .col-6 a {
 
 @media (max-width: 768px) {
   .right {
-    visibility: hidden;
+    display: none;
   }
 }
