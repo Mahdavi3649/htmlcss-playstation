@@ -1,3 +1,4 @@
+/* common */
 :root {
   --bg-footer: #00439c;
   --dark-blu: #161c3b;
@@ -11,13 +12,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.jumbotron {
-  width: 100%;
-  height: 500px;
-  background-image: url("img/jumbo-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* utility */
+.my_cursor_pointer {
+  cursor: pointer;
 }
 
 .font-s-15 {
@@ -34,6 +31,80 @@ body {
 
 .font-s-20 {
   font-size: 20px;
+}
+
+.my-text-gray {
+  color: #777777;
+}
+
+.my-text-blue {
+  color: #0072ce;
+}
+
+/* header */
+ul {
+  list-style: none;
+  padding-left: 0rem !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-text {
+  color: black;
+  font-size: 12px;
+}
+
+.dropdown-item:hover {
+  box-shadow: 1px 0px 4px 4px #e9ecef;
+  background-color: white;
+}
+
+.li-row {
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-toggle::after {
+  border: none;
+  font: var(--fa-font-solid);
+  content: "\f107";
+}
+
+.dropdown-toggle.show::after {
+  content: "\f106";
+}
+
+.dropdown_img {
+  height: 4rem;
+}
+
+.dropdown-menu ul .circle {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #0070d1;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+/* main */
+.jumbotron {
+  width: 100%;
+  height: 500px;
+  background-image: url("img/jumbo-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .jumbo-item img {
@@ -63,12 +134,16 @@ body {
   opacity: 100%;
 }
 
-.my-text-gray {
-  color: #777777;
+.nuove-uscite {
+  background-color: var(--light-black);
 }
 
-.my-text-blue {
-  color: #0072ce;
+.playsplus {
+  background-color: var(--light-gray);
+}
+
+.playsnow {
+  background-color: var(--dark-blu);
 }
 
 .avventura {
@@ -85,6 +160,7 @@ body {
   outline: 2px solid black;
   outline-offset: -4px;
 }
+
 .btn_red {
   background-color: var(--btn_red);
   color: white !important;
@@ -109,58 +185,22 @@ body {
   color: black;
   font-weight: bold;
 }
+/* End-main */
 
-.nuove-uscite {
-  background-color: var(--light-black);
-}
-
-.my_cursor_pointer {
-  cursor: pointer;
-}
-
-.playsplus {
-  background-color: var(--light-gray);
-}
-
-.playsnow {
-  background-color: var(--dark-blu);
-}
-
+/* footer */
 #site_footer {
   background-color: var(--bg-footer);
-}
-
-a {
-  text-decoration: none;
 }
 
 footer .container .row .col.top {
   line-height: 20px;
 }
 
-ul {
-  list-style: none;
-}
-
 footer .container .row .col.bottom a {
   text-decoration: underline;
 }
 
-.dropdown-toggle {
-  display: flex;
-  align-items: center;
-}
-
-.dropdown-toggle::after {
-  border: none;
-  font: var(--fa-font-solid);
-  content: "\f107";
-}
-
-.dropdown-toggle.show::after {
-  content: "\f106";
-}
-
+/* media-query */
 @media (max-width: 768px) {
   .right {
     display: none;
