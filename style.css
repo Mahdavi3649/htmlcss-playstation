@@ -17,10 +17,6 @@ body {
   cursor: pointer;
 }
 
-.font-s-15 {
-  font-size: 15px;
-}
-
 .font-s-12 {
   font-size: 12px;
 }
@@ -29,18 +25,9 @@ body {
   font-size: 13px;
 }
 
-.font-s-20 {
-  font-size: 20px;
-}
-
 .my-text-gray {
   color: #777777;
 }
-
-.my-text-blue {
-  color: #0072ce;
-}
-
 /* header */
 ul {
   list-style: none;
@@ -57,7 +44,7 @@ a {
 }
 
 .dropdown-item:hover {
-  box-shadow: 0px -1px 5px 2px #dcdee1;
+  box-shadow: 1px 0px 4px 3px #e9ecef;
   background-color: white;
 }
 
@@ -88,7 +75,7 @@ a {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #0070d1;
+  background-color: var(--bg-footer);
 }
 
 .dropdown-menu ul {
@@ -107,30 +94,65 @@ a {
   background-size: cover;
 }
 
-.jumbo-item img {
-  border-radius: 10px;
-  cursor: pointer;
+.jumbo_bottom .cards img {
+  border-radius: 12px;
 }
 
-.jumbo-item img:hover {
-  transition: 0.5s;
-  transform: translate(0, -15%);
+.jumbo_bottom .cards {
+  position: relative;
+  cursor: pointer;
+  border-radius: 12px;
+  animation: bounce-out 1s;
+}
+
+.jumbo_bottom .cards:hover {
+  animation: bounce-in 2s infinite;
   border: 2px solid white;
   box-shadow: 0 0 0 0px white, 0 0 0 3px #0072ce;
+}
+
+@keyframes bounce-in {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+  1% {
+    bottom: 15px;
+    left: 0;
+  }
+  100% {
+    bottom: 15px;
+    left: 0;
+  }
+}
+
+@keyframes bounce-out {
+  0% {
+    bottom: 15px;
+    left: 0;
+  }
+  100% {
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .nuove-uscite img {
   border-radius: 15px;
 }
+.reg {
+  font-size: 15px;
+  vertical-align: super;
+}
 
 .plays5 .my-active {
   opacity: 75%;
-  transition: 0.5s;
+  transition: 0.25s;
   cursor: pointer;
 }
 
 .plays5 .my-active:hover {
-  border-bottom: 2px solid #0072ce;
+  border-bottom: 3px solid #0072ce;
   opacity: 100%;
 }
 
