@@ -222,6 +222,11 @@ footer .container .row .col.bottom a {
   text-decoration: underline;
 }
 
+footer .container .row .col.top a.text-white:hover {
+  color: yellow !important;
+  font-size: 15px;
+}
+
 /* media-query */
 @media (max-width: 768px) {
   .right {
